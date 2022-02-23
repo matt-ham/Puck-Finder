@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="num_of_pucks">
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </integer-array>
+    <integer-array name="game_dimensions_row">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="game_dimensions_col">
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+    </integer-array>
+
+    <integer name="default_num_pucks">6</integer>
+    <integer name="default_game_dimensions_row">4</integer>
+    <integer name="default_game_dimensions_col">6</integer>
+</resources>

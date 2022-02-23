@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/bgGameUI"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tblButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvFoundPucks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found x of x Pucks"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tblButtons"
+        app:layout_constraintEnd_toEndOf="@+id/bgGameUI"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/tblButtons"
+        app:layout_constraintTop_toTopOf="@+id/bgGameUI" />
+
+    <TextView
+        android:id="@+id/tvScansUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num Scans Used: x"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tblButtons"
+        app:layout_constraintEnd_toEndOf="@+id/tblButtons"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/tvFoundPucks"
+        app:layout_constraintTop_toTopOf="@+id/bgGameUI" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
